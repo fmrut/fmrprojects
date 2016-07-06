@@ -1,0 +1,476 @@
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('../fonts/opensans-regular.woff2') format('woff2'), url('../fonts/opensans-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    font-family: 'open_sansregular';
+    padding: 0;
+    margin: 0;
+}
+html {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+}
+.mw {
+    /*-main width szerokosc glowna-*/
+    width: 980px;
+    margin: auto;
+}
+#top {
+    color: white;
+    background-color: black;
+}
+#logo p {
+    /*stylowanie logotypu*/
+    margin-left: 0;
+    line-height: 30px;
+    width: 200px;
+    float: left;
+    text-transform: uppercase;
+}
+#logo span, #logoBig span {
+    color: #24BAA0;
+    font-weight: bold;
+}
+nav {
+    float: right;
+}
+.clear {
+    clear: both;
+}
+#mm> li {
+    display: inline-block;
+    width: 120px;
+    margin-top: 1px;
+    font-size: 14px;
+    text-align: center;
+}
+#mm> li> a {
+    color: white;
+    margin: 0 30px;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-weight: lighter;
+    display: block;
+    text-decoration: none;
+}
+#mm ul {
+    color: white;
+    position: absolute;
+    display: none;
+    padding: 0;
+    margin: 0;
+    /*top: 53px;*/
+    list-style-type: none;
+}
+#mm li:hover> ul {
+    display: block;
+}
+#mm ul li a {
+    padding: 15px 20px;
+    color: white;
+    display: block;
+    text-decoration: none;
+    background-color: black;
+}
+#sm1 {
+    position: relative;
+    background-color: transparent;
+    margin-top: 30px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid black;
+    left: 50px;
+}
+ul, li {
+    list-style: none;
+}
+#slider {
+    /*tło z gradientem*/
+    height: 400px;
+    background: rgba(254, 254, 254, 1);
+    background: -moz-linear-gradient(top, rgba(254, 254, 254, 1) 0%, rgba(209, 209, 209, 1) 90%, rgba(226, 226, 226, 1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(254, 254, 254, 1)), color-stop(90%, rgba(209, 209, 209, 1)), color-stop(100%, rgba(226, 226, 226, 1)));
+    background: -webkit-linear-gradient(top, rgba(254, 254, 254, 1) 0%, rgba(209, 209, 209, 1) 90%, rgba(226, 226, 226, 1) 100%);
+    background: -o-linear-gradient(top, rgba(254, 254, 254, 1) 0%, rgba(209, 209, 209, 1) 90%, rgba(226, 226, 226, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(254, 254, 254, 1) 0%, rgba(209, 209, 209, 1) 90%, rgba(226, 226, 226, 1) 100%);
+    background: linear-gradient(to bottom, rgba(254, 254, 254, 1) 0%, rgba(209, 209, 209, 1) 90%, rgba(226, 226, 226, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#e2e2e2', GradientType=0);
+}
+.arrows {
+    margin: 150px 0;
+    width: 60px;
+    height: 60px;
+    color: #24BAA0;
+    font-size: 70px;
+    font-weight: lighter;
+}
+.container {
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+}
+#sliderpict {
+    width: 55%;
+    height: 52%;
+    margin: 30px -57px;
+}
+#slidertext {
+    width: 40%;
+    height: 100%;
+    margin: 40px 0;
+    padding: 40px 0;
+}
+#slidertext> p {
+    margin-top: 40px;
+    font-size: 14px;
+    margin-left: 0;
+    margin-right: 0;
+}
+#slidertext h1 {
+    text-transform: uppercase;
+}
+#slidertext h1> p {
+    color: black;
+    font-weight: lighter;
+}
+#slidertext h1> p> span {
+    font-weight: bold;
+}
+#mainbtn {
+    margin-top: 10px;
+    background-color: #24BAA0;
+    border-radius: 10px;
+    border-style: none;
+}
+#mainbtn> p {
+    color: white;
+    font-size: 18px;
+    margin: 5px 20px;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+.container2 {
+    width: 300px;
+    margin: 40px 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+h3 {
+    width: 200px;
+    border-bottom: 6px solid #24BAA0;
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: 20px;
+}
+#img3 div h3 {
+    margin-left: 0;
+}
+.container2 img {
+    width: 300px;
+}
+#chairC {
+    position: relative;
+    margin-left: 15px;
+}
+div.wpisyImages {
+    position: absolute;
+    z-index: 1;
+    bottom: 20px;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+    line-height: 20px;
+}
+div.wpisyImages p {
+    margin-left: 20px;
+    font-weight: bold;
+}
+#chairM {
+    position: relative;
+}
+#img3 {
+    width: 260px;
+    padding: 0 20px;
+    border: 1px solid rgb(230, 230, 230);
+    font-size: 14px;
+}
+#priceIntro {
+    text-transform: uppercase;
+    border-bottom: 5px solid #24BAA0;
+    width: 200px;
+    padding-top: 20px;
+}
+.container3 {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    width: 300px;
+    height: 420px;
+    margin: 30px 5px;
+    /*border: 2px solid lightgrey;*/
+    vertical-align: middle;
+}
+.container3:first-of-type {
+    background-color: rgba(211, 211, 211, 0.15);
+    padding: 2px 0;
+    border: 2px solid lightgrey;
+}
+.container3:nth-of-type(2) {
+    background-color: #24BAA0;
+    color: white;
+    border: 2px solid #24BAA0;
+}
+.container3:nth-of-type(3) {
+    background-color: rgba(211, 211, 211, 0.15);
+    padding: 2px 0;
+    border: 2px solid lightgrey;
+}
+#priceBackground {
+    background-color: whitesmoke;
+}
+.planType1 h2 {
+    margin-top: 30px;
+    text-transform: uppercase;
+    color: #24BAA0;
+}
+.planType2 h2 {
+    margin-top: 30px;
+    text-transform: uppercase;
+    color: white;
+}
+.planPrice {
+    color: silver;
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 20px 100px;
+    text-align: center;
+    border: 1px solid lightgrey;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.prices {
+    font-size: 36px;
+    font-weight: bold;
+}
+.planPrice p sup, .planPrice2 p sup {
+    vertical-align: top;
+}
+.planPrice p, .planPrice2 p {
+    margin-top: 20px;
+}
+.planPrice2 {
+    color: #24BAA0;
+    background-color: white;
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+    margin: 20px 100px;
+    text-align: center;
+    border: 1px solid #24BAA0;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.planAdds p {
+    line-height: 30px;
+    margin: 0;
+}
+.planAdds p:nth-child(2n+1) {
+    color: rgb(130, 130, 130);
+    background-color: rgb(225, 225, 225);
+}
+.planAdds p:nth-child(2n+2) {
+    color: rgb(130, 130, 130);
+    background-color: rgb(235, 235, 235);
+}
+#planType2Adds p {
+    line-height: 30px;
+    margin: 0;
+}
+#planType2Adds p:nth-child(2n+1) {
+    color: rgb(130, 130, 130);
+    background-color: white;
+}
+button#b2 {
+    background-color: #24BAA0;
+    border-radius: 5px;
+    text-transform: uppercase;
+    border: none;
+    height: 40px;
+    width: 50%;
+    position: relative;
+    margin-top: 81px;
+}
+#b2 a, #b4 a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: lighter;
+    position: absolute;
+    right: 45px;
+    bottom: 10px;
+}
+#b4 {
+    background-color: #24BAA0;
+    border-radius: 5px;
+    text-transform: uppercase;
+    border: none;
+    height: 40px;
+    width: 50%;
+    position: relative;
+    margin-top: 20px;
+}
+#b3 {
+    background-color: white;
+    border-radius: 5px;
+    text-transform: uppercase;
+    border: none;
+    height: 40px;
+    width: 50%;
+    position: relative;
+    margin-top: 49px;
+}
+#b3 a {
+    text-decoration: none;
+    color: #24BAA0;
+    font-size: 16px;
+    font-weight: lighter;
+    position: absolute;
+    right: 45px;
+    bottom: 10px;
+}
+.planTopDot {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid lightgrey;
+    top: -30px;
+    left: 125px;
+    position: absolute;
+}
+.planTopDot> span {
+    width: 30px;
+    height: 30px;
+    margin: 14px;
+    border-radius: 50%;
+    background-color: lightgrey;
+    border: 1px solid lightgrey;
+    display: inline-block;
+}
+#planType2TopDot {
+    background-color: #24BAA0;
+    border: none;
+}
+#planType2TopDot span {
+    background-color: white;
+    border: none;
+}
+h2#formIntro {
+    text-transform: uppercase;
+    border-bottom: 5px solid #24BAA0;
+    width: 200px;
+}
+.container4 {
+    display: inline-block;
+    vertical-align: top;
+}
+.container4 input {
+    width: 500px;
+    height: 60px;
+    border: 1px solid #24BAA0;
+    margin: 15px 0;
+    font-size: 28px;
+    font-weight: 100;
+    padding-left: 10px;
+}
+#message> input[type="textarea"] {
+    padding-bottom: 100px;
+}
+#checkboxPart {
+    margin-left: 30px;
+}
+#checkboxPart img {
+    width: 275px;
+    margin: 0 50px;
+    padding-top: -14px;
+}
+input[type="checkbox"] {
+    display: none;
+}
+input[type="checkbox"]+ label p {
+    display: inline-block;
+    width: 48px;
+    height: 40px;
+    margin: 20px 0;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid lightgrey;
+    float: left;
+}
+input[type="checkbox"]:checked+ label p {
+    background: url("../images/form_ok.jpg") no-repeat;
+    border: 1px solid #24BAA0;
+}
+span#checkText {
+    color: lightgrey;
+    width: 80%;
+    margin: 20px 0;
+    float: right;
+}
+.clear {
+    clear: both;
+}
+#b5 {
+    text-decoration: none;
+    background-color: #24BAA0;
+    color: white;
+    text-transform: uppercase;
+    width: 95%;
+    height: 50px;
+    border-radius: 13px;
+    border: none;
+    position: relative;
+    vertical-align: top;
+}
+#b5 p {
+    font-size: 28px;
+    margin-top: 7px;
+}
+footer {
+    line-height: 40px;
+    padding-bottom: 60px;
+}
+.footContainerRight {
+    display: inline-block;
+    float: right;
+}
+.footContainerLeft {
+  font-size: 16px;
+  color: silver;
+  margin-left: 0;
+  font-weight: 100;
+  float: left;
+}
+img.footContainerRight {
+    margin: 15px 5px;
+}
+p.footContainerRight {
+    text-transform: uppercase;
+    padding-left: 150px;
+    font-weight: 200;
+    color: silver;
+}
+p.footContainerRight span {
+    color: gray;
+    font-weight: 900;
+}

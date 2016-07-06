@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sit on chair –– my first html/css website</title>
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div id="top">
+            <div class="mw">
+                <div id="logo">
+                    <p>Sit <span>on</span> chair</p>
+                </div>
+
+                <nav id="mainmenu">
+                    <ul id="mm">
+                        <li><a href="http://google.com">o firmie</a>
+                            <ul>
+                                <li id="sm1"></li>
+                                <li><a href="http://google.com">Aktualności</a></li>
+                                <li><a href="http://google.com">Nasz team</a></li>
+                                <li><a href="http://google.com">Historia</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="http://google.com">galeria</a></li>
+                        <li><a href="http://google.com">kontakt</a></li>
+                    </ul>
+                </nav>
+
+                <div class="clear"></div>
+            </div>
+        </div>
+    </header>
+    <!-- umieszczam slajder zdj+tekst-->
+    <div id="slider">
+        <div class="mw">
+            <div>
+                <div class="arrows container">
+                    < </div>
+                        <!--strzałka lewo-->
+                        <img id="sliderpict" src="images/black_chair.png" class="container">
+                        <div id="slidertext" class="container">
+                            <h1 id="logoBig">Sit <span>on</span> our <span>chair</span></h1>
+                            <p>Cookie donut wafer cake toffee donut soufflé bonbon dragée. Croissant jujubes brownie soufflé. Chocolate oat cake marzipan.</p>
+                            <button id="mainbtn">
+                                <p>zobacz więcej</p>
+                            </button>
+                        </div>
+                        <div class="arrows container"> > </div>
+                        <!--strzałka prawo-->
+                </div>
+            </div>
+        </div>
+
+        <!-- umieszczam sekcję z wpisami-->
+        <section id="wpisy">
+            <div class="mw">
+                <div id="chairC" class="container2">
+                    <img src="images/box1_img.jpg">
+                    <div class="wpisyImages">
+                        <h3>Chair CLAIR</h3>
+                    </div>
+                </div>
+
+                <div id="chairM" class="container2">
+                    <img src="images/box2_img.jpg">
+                    <div class="wpisyImages">
+                        <h3>Chair MARGARITA</h3>
+                    </div>
+                </div>
+
+                <div id="img3" class="container2">
+                    <div>
+                        <h3>Finds all inputs</h3>
+                        <p>Cookie donut wafer cake toffee donut soufflé bonbon dragée. Croissant jujubes brownie soufflé. Chocolate oat cake marzipan. Cookie donut wafer cake toffee donut soufflé bonbon dragée. Croissant jujubes brownie soufflé.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- umieszczam część z cennikiem-->
+        <section id="priceMarkdown">
+            <div id="priceBackground">
+                <div class="mw">
+                    <h2 id="priceIntro"> cennik </h2>
+
+                    <!--pierwsza oferta cenowa-->
+                    <div class="container3">
+                        <div class="planType1">
+                            <h2> basic plan </h2>
+                            <div class="planPrice">
+                                <p><span class="prices">85</span><sup>99</sup> pln/msc</p>
+                            </div>
+                            <div class="planAdds">
+                                <p> Zakup towaru + dowóz </p>
+                                <p> Serwis </p>
+                            </div>
+                            <button id="b2"><a href="http://google.com" class="buttons"> dołącz </a></button>
+                            <!-- kropki nad pierwszą oferta -->
+                            <div class="planTopDot">
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--druga oferta cenowa-->
+                    <div class="container3">
+                        <div class="planType2">
+                            <h2> standard plan </h2>
+                            <div class="planPrice2">
+                                <p><span class="prices">95</span><sup>99</sup> pln/msc</p>
+                            </div>
+                            <div class="planAdds" id="planType2Adds">
+                                <p> Zakup towaru + dowóz </p>
+                                <p> Serwis </p>
+                                <p> Gwarancja 5 lat </p>
+                            </div>
+                            <button id="b3"><a href="http://google.com" class="buttons"> dołącz </a></button>
+                            <!-- kropki nad drugą oferta -->
+                            <div class="planTopDot" id="planType2TopDot">
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--trzecia oferta cenowa-->
+                    <div class="container3">
+                        <div class="planType1">
+                            <h2> advance plan </h2>
+                            <div class="planPrice">
+                                <p><span class="prices">211</span><sup>00</sup> pln/msc</p>
+                            </div>
+                            <div class="planAdds">
+                                <p> Zakup towaru + dowóz </p>
+                                <p> Serwis </p>
+                                <p> Gwarancja 5 lat </p>
+                                <p> Porady projektanta </p>
+                            </div>
+                            <button id="b4"><a href="http://google.com" class="buttons"> dołącz </a></button>
+                        </div>
+                        <!-- kropki nad trzecia oferta -->
+                        <div class="planTopDot">
+                            <span></span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- dół strony -->
+        <section id="bottom">
+            <div class="mw">
+                <h2 id="formIntro"> kontakt </h2>
+                <!-- umieszczam formularz -->
+                <form class="container4">
+                    <div id="imie">
+                        <input type="text" name="name" placeholder="Imię" />
+                    </div>
+                    <div id="email">
+                        <input type="text" name="email" placeholder="email" />
+                    </div>
+                    <div id="message">
+                        <input type="textarea" name="message" placeholder="Wiadomość" />
+                    </div>
+                </form>
+
+                <!-- checkbox + button -->
+                <div id="checkboxPart" class="container4">
+                    <img src="images/red_chair.png">
+<!-- tworzę formularz a w nim checkbox (input+label) wraz z input submit powodujacym 'wyslanie' -->
+                    <form>
+                        <input type="checkbox" id="checkIt">
+                        <label for="checkIt">
+                            <p></p><span id="checkText">Zgadzam się na przetwarzanie danych osobowych</span></label>
+                        <div class="clear"></div>
+                        <input id="b5" type="submit" value="Wyślij" />
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- umieszczam footer strony wraz z ikonkami=laczami -->
+        <footer>
+            <div class="mw">
+              <p class="footContainerLeft"> Copyright 2014  ||  All Rights Reserved - Sit On Chair </p>
+              <p class="footContainerRight"> Sit <span>on</span> chair </p>
+              <a href="http://twitter.com"><img src="images/twitter.png" class="footContainerRight"></a>
+              <a href="http://pinterest.com"><img src="images/pinterest.png" class="footContainerRight"></a>
+              <a href="http://vimeo.com"><img src="images/vimeo.png" class="footContainerRight"></a>
+              <a href="http://flickr.com"><img src="images/flickr.png" class="footContainerRight"></a>
+              <div class="clear"></div>
+            </div>
+        </footer>
+</body>
+
+</html>
